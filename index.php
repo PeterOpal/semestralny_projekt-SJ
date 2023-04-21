@@ -1,3 +1,4 @@
+<!-- PHP projekt: cestovná kancelária -->
 <!doctype html>
 <html class="no-js"  lang="en">
 
