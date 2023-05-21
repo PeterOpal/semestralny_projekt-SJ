@@ -90,7 +90,7 @@ $(document).ready(function(){
         
         function makeTimer() {
 
-                var endTime = new Date("August 7, 2023 12:00:00 PDT");            
+                var endTime = new Date("March 7, 2019 12:00:00 PDT");            
                 var endTime = (Date.parse(endTime)) / 1000;
 
                 var now = new Date();
@@ -166,6 +166,13 @@ $(document).ready(function(){
         
         //=============
 
+        $('li.smooth-menu a').bind("click", function(event) {
+            event.preventDefault();
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - -1
+            }, 1200,'easeInOutExpo');
+        });
         
         $('body').scrollspy({
             target:'.navbar-collapse',
@@ -190,4 +197,4 @@ $(document).ready(function(){
 
 });	
 
-
+	
